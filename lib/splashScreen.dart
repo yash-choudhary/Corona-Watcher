@@ -26,7 +26,7 @@ class SplashScreenState extends State<SplashScreen> {
         fit: StackFit.expand,
         children: <Widget>[
           Container(
-            decoration: BoxDecoration(color: Colors.white),
+            decoration: BoxDecoration(color: Colors.blue[400]),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -38,22 +38,18 @@ class SplashScreenState extends State<SplashScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       CircleAvatar(
-                        backgroundColor: Colors.red,
-                        radius: 30.0,
-                        child: Icon(
-                          Icons.add,
-                          color: Colors.white,
-                          size: 50.0,
-                        ),
+                        backgroundColor: Colors.transparent,
+                        radius: 60.0,
+                        backgroundImage: AssetImage('assets/images/corona.jpg'),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(top: 10.0),
+                        padding: EdgeInsets.only(top: 15.0),
                       ),
                       Text(
                         "CORONA WATCHER",
                         style: TextStyle(
-                            color: Colors.redAccent,
-                            fontWeight: FontWeight.bold,
+                            fontWeight: FontWeight.w400,
+                            color: Colors.black,
                             fontSize: 24.0),
                       )
                     ],
