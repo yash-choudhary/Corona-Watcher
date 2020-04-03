@@ -15,7 +15,7 @@ class SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(
-        Duration(seconds: 5),
+        Duration(seconds: 1),
             () => Navigator.of(context).pushReplacement(MaterialPageRoute(
             builder: (BuildContext context) => HomeScreen())));
   }
@@ -26,7 +26,7 @@ class SplashScreenState extends State<SplashScreen> {
         fit: StackFit.expand,
         children: <Widget>[
           Container(
-            decoration: BoxDecoration(color: Colors.blue[400]),
+            decoration: BoxDecoration(color: Colors.redAccent),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -38,18 +38,22 @@ class SplashScreenState extends State<SplashScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       CircleAvatar(
-                        backgroundColor: Colors.transparent,
-                        radius: 60.0,
-                        backgroundImage: AssetImage('assets/images/corona.jpg'),
+                        backgroundColor: Colors.white,
+                        radius: 30.0,
+                        child: Icon(
+                          Icons.add,
+                          color: Colors.red,
+                          size: 50.0,
+                        ),
                       ),
                       Padding(
-                        padding: EdgeInsets.only(top: 15.0),
+                        padding: EdgeInsets.only(top: 10.0),
                       ),
                       Text(
                         "CORONA WATCHER",
                         style: TextStyle(
-                            fontWeight: FontWeight.w400,
-                            color: Colors.black,
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
                             fontSize: 24.0),
                       )
                     ],

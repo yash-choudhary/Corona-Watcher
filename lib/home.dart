@@ -5,7 +5,6 @@ import 'details.dart';
 
 
 class HomeScreen extends StatefulWidget {
-
   @override
   State<StatefulWidget> createState() {
     return HomeScreenState();
@@ -15,6 +14,7 @@ class HomeScreen extends StatefulWidget {
 class HomeScreenState extends State<HomeScreen>  {
 
   int _currentIndex=0;
+
   final List<Widget> _children=[
     MajorPage(),
     DetailScreen(),
@@ -27,10 +27,15 @@ class HomeScreenState extends State<HomeScreen>  {
   }
   @override
   Widget build(BuildContext context) {
+
+
     return Scaffold(
-      body: _children[_currentIndex],
+      body: IndexedStack(
+        index: _currentIndex,
+        children: _children,
+      ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.redAccent,
         selectedItemColor: Colors.black,
         unselectedItemColor: Colors.white,
         type: BottomNavigationBarType.fixed,
@@ -38,15 +43,15 @@ class HomeScreenState extends State<HomeScreen>  {
         currentIndex: _currentIndex,
         items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            title: Text("Home"),
+            icon: Icon(Icons.assessment),
+            title: Text("Overview"),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.local_hospital),
-            title: Text("Details"),
+            icon: Icon(Icons.location_on),
+            title: Text("Regional"),
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.info),
+            icon: Icon(Icons.info_outline),
             title: Text("News"),
           ),
         ],

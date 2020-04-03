@@ -14,7 +14,7 @@ class NewsScreenState extends State<NewsScreen> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text("Listviews"),
+        title: new Text("News"),
       ),
       body: Text("hello"),
     );

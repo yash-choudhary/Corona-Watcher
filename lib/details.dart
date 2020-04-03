@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'notes.dart';
@@ -29,12 +30,13 @@ class DetailScreenState extends State<DetailScreen> {
     }
     return notes;
   }
-
+  bool _progressBarActive = true;
   @override
   void initState() {
     fetchNotes().then((value) {
       setState(() {
         _notes.addAll(value);
+        _progressBarActive = false;
       });
     });
     super.initState();
@@ -42,7 +44,7 @@ class DetailScreenState extends State<DetailScreen> {
   @override
   Widget build(BuildContext context) {
     return new Material(
-        child: new Column(
+        child: _progressBarActive == true?const Center(child: const CircularProgressIndicator()):new Column(
             children: <Widget>[
           new Padding(
             padding: new EdgeInsets.only(top: 20.0),
@@ -52,88 +54,35 @@ class DetailScreenState extends State<DetailScreen> {
               itemCount: _notes.length,
               itemBuilder: (BuildContext context, int index) {
                 return Card(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
+                  child: ExpansionTile(
+                    title: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
-                           Padding(
-                             padding: EdgeInsets.only(top: 32.0,bottom: 22.0,left: 8.0,right: 0.0),
-                           ),
-                        Text(
-                          "COUNTRY:",
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.red,
-                          ),
-                        ),
                         Text(
                           _notes[index].country,
                           style: TextStyle(
-                            fontSize: 20,
-                            color: Colors.black87,
+                            fontSize: 25,
+                            color: Colors.black,
                             fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        Text(
-                          "TOTAL CASES:",
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.red,
                           ),
                         ),
                         Text(
                           _notes[index].total_case,
                           style: TextStyle(
-                            fontSize: 20,
-                            color: Colors.black87,
-                            fontWeight: FontWeight.bold,
+                            fontSize: 25,
+                            color: Colors.redAccent,
+                            fontWeight: FontWeight.normal,
                           ),
                         ),
-                        ExpansionTile(
-                          trailing: Icon(Icons.flag),
-                          title: Text("Details",style: TextStyle(fontSize:20,color: Colors.black ),),
-                          children: <Widget>[
-                            Column(
-                               crossAxisAlignment: CrossAxisAlignment.center,
-                               children: <Widget>[
-                                 Text(
-                                   "TOTAL DEATH:",
-                                   style: TextStyle(
-                                     fontSize: 15,
-                                     fontWeight: FontWeight.bold,
-                                     color: Colors.red,
-                                   ),
-                                 ),
-                                 Text(
-                                   _notes[index].total_death,
-                                   style: TextStyle(
-                                     fontSize: 15,
-                                     color: Colors.black87,
-                                     fontWeight: FontWeight.bold,
-                                   ),
-                                 ),
-                                 Text(
-                                   "TOTAL RECOVERED:",
-                                   style: TextStyle(
-                                     fontSize: 15,
-                                     fontWeight: FontWeight.bold,
-                                     color: Colors.red,
-                                   ),
-                                 ),
-                                 Text(
-                                   _notes[index].total_recovered,
-                                   style: TextStyle(
-                                     fontSize: 15,
-                                     color: Colors.black87,
-                                     fontWeight: FontWeight.bold,
-                                   ),
-                                 ),
-                               ],
-                            )
-                          ],
-                        )
                       ],
+                    ),
+                    children: <Widget>[
+                      det_row("New Cases", _notes[index].new_case ),
+                      det_row("New Deaths", _notes[index].new_death ),
+                      det_row("Total Deaths", _notes[index].total_death ),
+                      det_row("Total Recovered", _notes[index].total_recovered ),
+                    ],
                   ),
                 );
 
@@ -143,3 +92,27 @@ class DetailScreenState extends State<DetailScreen> {
         ]));
   }
 }
+
+Widget det_row(head,val)=>  Padding(
+  padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
+  child:   Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: <Widget>[
+        Text(
+          head,
+          style: TextStyle(
+            fontSize: 15,
+            fontWeight: FontWeight.bold,
+            color: Colors.red,
+          ),
+        ),
+        Text(
+          val,
+          style: TextStyle(
+            fontSize: 15,
+            color: Colors.black87,
+            fontWeight: FontWeight.bold,
+          ),
+        ),]),
+);
