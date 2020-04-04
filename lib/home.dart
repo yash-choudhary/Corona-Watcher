@@ -1,5 +1,4 @@
 import 'package:coronapredictor/major.dart';
-import 'package:coronapredictor/news.dart';
 import 'package:flutter/material.dart';
 import 'details.dart';
 
@@ -18,7 +17,6 @@ class HomeScreenState extends State<HomeScreen>  {
   final List<Widget> _children=[
     MajorPage(),
     DetailScreen(),
-    NewsScreen(),
   ];
   void onTappedBar(int index){
      setState(() {
@@ -49,10 +47,6 @@ class HomeScreenState extends State<HomeScreen>  {
           BottomNavigationBarItem(
             icon: Icon(Icons.location_on),
             title: Text("Regional"),
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.info_outline),
-            title: Text("News"),
           ),
         ],
       ),
