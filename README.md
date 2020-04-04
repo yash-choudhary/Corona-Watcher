@@ -12,11 +12,11 @@ The Scraper is built using **BeautifulSoup4** and api is created using **Flask**
 The source code for this project is open-sourced and anyone can use it with citation to this repo.
 
 ## Data Source
-We would like to thank the developers and folks at ![Johns Hopkins University](https://coronavirus.jhu.edu/).
+We would like to thank the developers and folks at [Johns Hopkins University](https://coronavirus.jhu.edu/).
 Most of the data in our app is taken from there open sourced datasets.
 
 Info about the Scraper and API endpoints will be released soon...
 
 Thanks for Supporting.
 
-Made with :heart: by ![Yash](https://github.com/yash-choudhary) and ![Aditya](https://github.com/adityajain25).
+Made with :heart: by [Yash](https://yash-choudhary.github.io/) and [Aditya](https://github.com/adityajain25).
