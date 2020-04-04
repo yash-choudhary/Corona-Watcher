@@ -1,7 +1,15 @@
 # Corona Watcher
 Coronavirus disease (COVID-19) is an infectious disease caused by a new virus.
 The disease causes respiratory illness (like the flu) with symptoms such as a cough, fever, and in more severe cases, difficulty breathing. You can protect yourself by washing your hands frequently, avoiding touching your face, and avoiding close contact (1 meter or 3 feet) with people who are unwell.
-
+<br>
+<br>
+<br>
+<a href="https://ibb.co/Rh8b9hC"><img src="https://i.ibb.co/5YZ46Y5/Phone-Screenshot-2.png" alt="Phone-Screenshot-2" border="0" height ="450" width = "250"></a>
+<a href="https://ibb.co/SNprHsG"><img src="https://i.ibb.co/F6tVcxC/Phone-Screenshot-3.png" alt="Phone-Screenshot-3" border="0" height ="450" width = "250"></a>
+<a href="https://ibb.co/BV6tsGK"><img src="https://i.ibb.co/SXmPvc7/Phone-Screenshot-4.png" alt="Phone-Screenshot-4" border="0" height ="450" width = "250"></a>
+<br>
+<br>
+<br>
 ## How it spreads
 Coronavirus disease spreads primarily through contact with an infected person when they cough or sneeze. It also spreads when a person touches a surface or object that has the virus on it, then touches their eyes, nose, or mouth.
 
