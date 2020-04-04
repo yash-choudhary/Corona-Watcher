@@ -1,12 +1,13 @@
 # Corona Watcher
 Coronavirus disease (COVID-19) is an infectious disease caused by a new virus.
 The disease causes respiratory illness (like the flu) with symptoms such as a cough, fever, and in more severe cases, difficulty breathing. You can protect yourself by washing your hands frequently, avoiding touching your face, and avoiding close contact (1 meter or 3 feet) with people who are unwell.
+<br>height ="300" width = "165"
 <br>
 <br>
-<br>
-<a href="https://ibb.co/Rh8b9hC"><img src="https://i.ibb.co/5YZ46Y5/Phone-Screenshot-2.png" alt="Phone-Screenshot-2" border="0" height ="450" width = "250"></a>
-<a href="https://ibb.co/SNprHsG"><img src="https://i.ibb.co/F6tVcxC/Phone-Screenshot-3.png" alt="Phone-Screenshot-3" border="0" height ="450" width = "250"></a>
-<a href="https://ibb.co/BV6tsGK"><img src="https://i.ibb.co/SXmPvc7/Phone-Screenshot-4.png" alt="Phone-Screenshot-4" border="0" height ="450" width = "250"></a>
+<a href="https://ibb.co/MfYGDHG"><img src="https://i.ibb.co/kJR9gT9/Phone-Screenshot-2.png" alt="Phone-Screenshot-2" border="0" height ="300" width = "165"></a>
+<a href="https://ibb.co/QXy1R5Q"><img src="https://i.ibb.co/DL0SyqW/Phone-Screenshot-3.png" alt="Phone-Screenshot-3" border="0" height ="300" width = "165"></a>
+<a href="https://ibb.co/mqDswxh"><img src="https://i.ibb.co/gTj1pnt/Phone-Screenshot-4.png" alt="Phone-Screenshot-4" border="0" height ="300" width = "165"></a>
+<a href="https://ibb.co/VDSCJ9n"><img src="https://i.ibb.co/RP06Ybr/Phone-Screenshot-5.png" alt="Phone-Screenshot-5" border="0" height ="300" width = "165"></a>
 <br>
 <br>
 <br>
