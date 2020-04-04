@@ -60,7 +60,7 @@ class _MajorPageState extends State<MajorPage> {
             style: TextStyle(
               fontWeight: FontWeight.normal,
               color: Colors.white,
-              fontSize: 30,
+              fontSize: 25,
             ),
           ),
         ),
@@ -105,7 +105,7 @@ class _MajorPageState extends State<MajorPage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
-                      sumcon("Total Recovered",recov,height*0.15,width*0.47,Colors.white,Colors.black45,Colors.green),
+                      sumcon("Recovered",recov,height*0.15,width*0.47,Colors.white,Colors.black45,Colors.green),
                       sumcon("Active Cases",active_cases,height*0.15,width*0.47,Colors.black,Colors.black45,Colors.white),
                     ],
                   ),
@@ -147,7 +147,7 @@ Widget sumcon(num,text,height,width,tc1,tc2,box_col)  => Container(
             style: TextStyle(
               fontWeight: FontWeight.bold,
               color: tc1,
-              fontSize: 30,
+              fontSize: 28,
             ),
             textAlign: TextAlign.left,
           ),
@@ -164,4 +164,3 @@ Widget sumcon(num,text,height,width,tc1,tc2,box_col)  => Container(
     ),
   ),
 );
-

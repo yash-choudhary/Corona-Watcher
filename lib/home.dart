@@ -19,9 +19,9 @@ class HomeScreenState extends State<HomeScreen>  {
     DetailScreen(),
   ];
   void onTappedBar(int index){
-     setState(() {
-       _currentIndex=index;
-     });
+    setState(() {
+      _currentIndex=index;
+    });
   }
   @override
   Widget build(BuildContext context) {
@@ -34,8 +34,8 @@ class HomeScreenState extends State<HomeScreen>  {
       ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.redAccent,
-        selectedItemColor: Colors.black,
-        unselectedItemColor: Colors.white,
+        selectedItemColor: Colors.white,
+        unselectedItemColor: Colors.black,
         type: BottomNavigationBarType.fixed,
         onTap: onTappedBar,
         currentIndex: _currentIndex,
