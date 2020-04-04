@@ -19,4 +19,4 @@ Info about the Scraper and API endpoints will be released soon...
 
 Thanks for Supporting.
 
-Made with :heart: by ![Yash](https://yash-choudhary.github.io) and ![Aditya](https://github.com/adityajain25).
+Made with :heart: by ![Yash](https://github.com/yash-choudhary) and ![Aditya](https://github.com/adityajain25).
