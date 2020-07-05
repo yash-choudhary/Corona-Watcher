@@ -4,10 +4,10 @@ The disease causes respiratory illness (like the flu) with symptoms such as a co
 <br>height ="300" width = "165"
 <br>
 <br>
-<a href="https://ibb.co/MfYGDHG"><img src="https://i.ibb.co/kJR9gT9/Phone-Screenshot-2.png" alt="Phone-Screenshot-2" border="0" height ="300" width = "165"></a>
-<a href="https://ibb.co/QXy1R5Q"><img src="https://i.ibb.co/DL0SyqW/Phone-Screenshot-3.png" alt="Phone-Screenshot-3" border="0" height ="300" width = "165"></a>
-<a href="https://ibb.co/mqDswxh"><img src="https://i.ibb.co/gTj1pnt/Phone-Screenshot-4.png" alt="Phone-Screenshot-4" border="0" height ="300" width = "165"></a>
-<a href="https://ibb.co/VDSCJ9n"><img src="https://i.ibb.co/RP06Ybr/Phone-Screenshot-5.png" alt="Phone-Screenshot-5" border="0" height ="300" width = "165"></a>
+<a href="random-assets/Phone-Screenshot-2.png"><img src="random-assets/Phone-Screenshot-2.png" alt="Phone-Screenshot-2" border="0" height ="300" width = "165"></a>
+<a href="random-assets/Phone-Screenshot-3.png"><img src="random-assets/Phone-Screenshot-3.png" alt="Phone-Screenshot-3" border="0" height ="300" width = "165"></a>
+<a href="random-assets/Phone-Screenshot-4.png"><img src="random-assets/Phone-Screenshot-4.png" alt="Phone-Screenshot-4" border="0" height ="300" width = "165"></a>
+<a href="random-assets/Phone-Screenshot-5.png"><img src="random-assets/Phone-Screenshot-5.png" alt="Phone-Screenshot-5" border="0" height ="300" width = "165"></a>
 <br>
 <br>
 <br>
