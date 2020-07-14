@@ -1,7 +1,7 @@
 # Corona Watcher
 Coronavirus disease (COVID-19) is an infectious disease caused by a new virus.
 The disease causes respiratory illness (like the flu) with symptoms such as a cough, fever, and in more severe cases, difficulty breathing. You can protect yourself by washing your hands frequently, avoiding touching your face, and avoiding close contact (1 meter or 3 feet) with people who are unwell.
-<br>height ="300" width = "165"
+<br>
 <br>
 <br>
 <a href="random-assets/Phone-Screenshot-2.png"><img src="random-assets/Phone-Screenshot-2.png" alt="Phone-Screenshot-2" border="0" height ="300" width = "165"></a>
@@ -19,6 +19,14 @@ This application uses realtime data scraped from multiple sources using a **pyth
 The Scraper is built using **BeautifulSoup4** and api is created using **Flask**.
 
 The source code for this project is open-sourced and anyone can use it with citation to this repo.
+
+## Technology Stack
+* Flutter
+* Heroku
+* Flask
+* Python
+* Dart
+* Firebase
 
 ## Data Source
 We would like to thank the developers and folks at [Johns Hopkins University](https://coronavirus.jhu.edu/).
